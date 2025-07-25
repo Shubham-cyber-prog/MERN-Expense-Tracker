@@ -32,32 +32,40 @@ A full-stack **Expense Tracker** web app built using the **MERN Stack (MongoDB, 
 
 ---
 
-## 📁 Folder Structure
+```
 
-MERN-Expense-Tracker/
+📁 MERN-Expense-Tracker/
 │
-├── client/ # React Frontend
-│ ├── public/
-│ │ ├── index.html
-│ │ ├── favicon.ico, logos, manifest.json, robots.txt
-│ └── src/
-│ ├── pages/ # Pages like Home, Dashboard
-│ ├── App.js, App.css
-│ ├── index.js, index.css
-│ ├── utils.js # Utility functions
-│ ├── RefrshHandler.js # Custom refresh logic
-│ ├── setupTests.js, reportWebVitals.js, etc.
+├── 💻 client/                    # React Frontend
+│   ├── 📂 public/               # Static files
+│   │   ├── index.html          # Root HTML template
+│   │   ├── favicon.ico         # App icon
+│   │   ├── manifest.json       # PWA support
+│   │   ├── robots.txt          # SEO settings
+│   │   └── logos/              # App logos (optional)
+│   │
+│   └── 📂 src/                  # React source code
+│       ├── 📂 pages/           # Page components (e.g., Home, Dashboard)
+│       ├── App.js              # Main App component
+│       ├── App.css             # Global styles
+│       ├── index.js            # Entry point for React DOM
+│       ├── index.css           # Global CSS styles
+│       ├── utils.js            # Reusable utility functions
+│       ├── RefrshHandler.js    # Custom session/refresh logic
+│       ├── setupTests.js       # Testing setup for React
+│       └── reportWebVitals.js  # Performance monitoring
 │
-├── server/ # Node + Express Backend
-│ ├── Controllers/
-│ ├── Middlewares/
-│ ├── Models/
-│ ├── Routes/
-│ ├── index.js # Main backend entry point
-│ ├── .env # Environment variables
-│ ├── package.json
-│ └── vercel.json # Deployment config
+├── 🚀 server/                   # Node + Express Backend
+│   ├── 📂 Controllers/          # Route controller logic
+│   ├── 📂 Middlewares/         # Auth, logging, error handlers
+│   ├── 📂 Models/              # Mongoose schemas
+│   ├── 📂 Routes/              # API endpoint definitions
+│   ├── index.js                # Main server entry point
+│   ├── .env                    # Sensitive environment variables
+│   ├── package.json            # Backend dependencies & scripts
+│   └── vercel.json             # ⚙️ Vercel deployment configuration
 
+````
 ## ⚙️ Setup Instructions
 
 ### 🔑 Prerequisites
