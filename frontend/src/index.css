@@ -20,7 +20,7 @@ body{
 body{
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
 }
 
 .container{
@@ -61,7 +61,7 @@ body{
   font-style: italic;
 }
 
-button{
+/* button{
   background-color: purple;
   border: none;
   font-size: 15px;
@@ -70,6 +70,44 @@ button{
   padding: 10px;
   cursor: pointer;
   margin: 10px 0;
+} */
+
+button {
+  background-color: #8a2be2; /* More vibrant purple */
+  border: none;
+  font-size: 16px;
+  color: white;
+  border-radius: 8px; /* Slightly larger radius */
+  padding: 12px 20px; /* More padding */
+  cursor: pointer;
+  margin: 15px 0;
+  font-weight: 600; /* Semi-bold text */
+  letter-spacing: 0.5px; /* Slightly spaced letters */
+  transition: all 0.3s ease; /* Smooth hover effects */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+button:hover {
+  background-color: #7b1fa2; /* Darker purple on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+button:active {
+  transform: translateY(0); /* Reset position when clicked */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Flattened shadow */
+}
+
+/* Specific style for delete button */
+.delete-button {
+  background-color: #e74c3c;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
 }
 
 .user-section{
