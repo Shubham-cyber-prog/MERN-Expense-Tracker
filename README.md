@@ -1,140 +1,137 @@
-# 💸 MERN Expense Tracker
+# 💰 MERN Expense Tracker - Full Stack Financial Management
 
-A full-stack **Expense Tracker** web app built using the **MERN Stack (MongoDB, Express, React, Node.js)**. Track your income and expenses in real-time with beautiful UI, secure backend, and MongoDB database.
-
----
-
-## 🚀 Features
-
-- ✅ Add, edit, and delete expenses and incomes
-- 📊 Dynamic chart showing income vs expenses
-- 🔒 User authentication (JWT-based login/signup)
-- 🌐 Connected to MongoDB Atlas
-- 📱 Fully responsive UI (mobile-friendly)
-- 🔍 Filter transactions by date or type
+> A full-stack Expense Tracker built using the MERN stack (MongoDB, Express, React, Node.js) to help you manage and track your expenses efficiently.
 
 ---
 
-## 🛠️ Tech Stack
+## ✨ Key Features
+
+| Feature | Description | Preview |
+|---------|-------------|---------|
+| **📊 Financial Dashboard** | Real-time overview of your financial health | ![Dashboard](https://i.imgur.com/5vGk9ZL.png) |
+| **🔐 Secure Authentication** | JWT-based login/signup with password encryption | ![Login](https://i.imgur.com/mXwPj3f.png) |
+| **📈 Smart Analytics** | Interactive charts for spending patterns | ![Analytics](https://i.imgur.com/QZJYl9D.png) |
+| **📱 Mobile Responsive** | Works flawlessly on all devices | ![Mobile](https://i.imgur.com/8WnUVqg.png) |
+
+---
+
+## 🛠 Tech Stack
 
 ### Frontend
-- React.js
-- Tailwind CSS / Bootstrap
-- Axios
-- Chart.js (for graphs)
+<div align="center">
+  
+| Technology | Purpose | 
+|------------|---------|
+| React 18 | Component-based UI |
+| Tailwind CSS | Modern styling utility |
+| Chart.js | Data visualization |
+| Axios | HTTP requests |
+| React Icons | Beautiful icons |
+
+</div>
 
 ### Backend
-- Node.js
-- Express.js
-- MongoDB + Mongoose
-- JSON Web Token (JWT)
-- bcrypt.js
+<div align="center">
+
+| Technology | Purpose |
+|------------|---------|
+| Node.js | Runtime environment |
+| Express | Web framework |
+| MongoDB | NoSQL database |
+| Mongoose | ODM for MongoDB |
+| JWT | Secure authentication |
+| Bcrypt | Password hashing |
+
+</div>
 
 ---
 
+## 🚀 Installation Guide
+
+### Prerequisites
+- Node.js ≥ 16.x
+- MongoDB Atlas account
+- Git
+
+### Setup Instructions
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/expense-tracker.git
+   cd expense-tracker
+   ```
+   
+2.Backend Setup
+```bash
+ cd backend 
+ npm install
+ npm run dev
+ cp .env.example .env
+ # Add your MongoDB URI and JWT secret in .env
+```
+ 
+3.frontend Setup
+```bash
+ cd frontend
+ npm i
+ npm run dev
 ```
 
-📁 MERN-Expense-Tracker/
-│
-├── 💻 client/                    # React Frontend
-│   ├── 📂 public/               # Static files
-│   │   ├── index.html          # Root HTML template
-│   │   ├── favicon.ico         # App icon
-│   │   ├── manifest.json       # PWA support
-│   │   ├── robots.txt          # SEO settings
-│   │   └── logos/              # App logos (optional)
-│   │
-│   └── 📂 src/                  # React source code
-│       ├── 📂 pages/           # Page components (e.g., Home, Dashboard)
-│       ├── App.js              # Main App component
-│       ├── App.css             # Global styles
-│       ├── index.js            # Entry point for React DOM
-│       ├── index.css           # Global CSS styles
-│       ├── utils.js            # Reusable utility functions
-│       ├── RefrshHandler.js    # Custom session/refresh logic
-│       ├── setupTests.js       # Testing setup for React
-│       └── reportWebVitals.js  # Performance monitoring
-│
-├── 🚀 server/                   # Node + Express Backend
-│   ├── 📂 Controllers/          # Route controller logic
-│   ├── 📂 Middlewares/         # Auth, logging, error handlers
-│   ├── 📂 Models/              # Mongoose schemas
-│   ├── 📂 Routes/              # API endpoint definitions
-│   ├── index.js                # Main server entry point
-│   ├── .env                    # Sensitive environment variables
-│   ├── package.json            # Backend dependencies & scripts
-│   └── vercel.json             # ⚙️ Vercel deployment configuration
-
-````
-## ⚙️ Setup Instructions
-
-### 🔑 Prerequisites
-- Node.js & npm
-- MongoDB Atlas account
-- Vercel (for frontend) / Render (for backend) accounts
-
----
-
-### 🔐 Environment Variables (`.env`)
-
-Inside `server/.env` file:
-
-```env
-MONGO_URI=your_mongo_connection_string
-JWT_SECRET=your_secret_key
-PORT=5000
-
-📦 Install Dependencies
-bash
-Copy
-Edit
-# For backend
-cd server
-npm install
-
-# For frontend
-cd ../client
-npm install
-🧑‍💻 Run the App
-bash
-Copy
-Edit
-# Run backend
-cd server
+4,Run Development Server 
+```bash
+ # In server directory
 npm run dev
 
-# Run frontend
-cd client
+# In client directory (new terminal)
 npm start
-🔗 Local URLs
-Frontend: http://localhost:3000
+```
 
-Backend: http://localhost:5000
+📸 Application Screenshots
+Auth Screens
+Login Page
+<img width="1914" height="929" alt="image" src="https://github.com/user-attachments/assets/74438cba-043f-42f4-9a95-2ed3f9b6b2e4" />
 
-🌐 Live Demo
-🔗 View Live Project
+Signup Page
+<img width="1914" height="929" alt="image" src="https://github.com/user-attachments/assets/56d31efc-1f56-4e5b-a933-02834e6cb722" />
 
-Replace with your actual deployed URL
 
-📸 Screenshots
+Core Features
+Expense 
+<img width="1914" height="929" alt="image" src="https://github.com/user-attachments/assets/9a09ff4b-738b-4bf1-b9eb-7a4d721b57eb" />
 
-🙋‍♂️ About the Developer
-Created with 💙 by Subham Nayak
-📧 Email: sn343555@gmail.com
-🔗 GitHub: Shubham-cyber-prog
-🔗 LinkedIn: https://www.linkedin.com/in/subhamnayak/
+Financial Analytic
+<img width="1914" height="929" alt="image" src="https://github.com/user-attachments/assets/48fd169b-2884-46e8-b993-0411a513135c" />
 
-📃 License
-This project is licensed under the MIT License
+🌐 Deployment 
+Frontend (Vercel)
+```bash
+https://img.shields.io/badge/Deployed%2520on-Vercel-black?style=for-the-badge&logo=vercel
+```
 
-⭐ Support
-If you like this project, give it a ⭐ on GitHub and share it!
----
+Backend (Render)
+```bash
+https://img.shields.io/badge/Deployed%2520on-Render-46E3B7?style=for-the-badge&logo=render
+```
 
-### ✅ What To Do Now:
-1. Paste this markdown into your `README.md` file.
-2. Replace:
-   - `your-deployed-site.vercel.app` with your live link
-   - Add screenshots in the “📸 Screenshots” section if you want
-3. Commit & push to GitHub
+📜 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+🤝 Contributing
+```bash
+Fork the Project
+
+Create your Feature Branch (git checkout -b feature/AmazingFeature)
+
+Commit your Changes (git commit -m 'Add some AmazingFeature')
+
+Push to the Branch (git push origin main)
+
+Open a Pull Request
+```
+👨‍💻 Developer
+<div align="center">
+Subham Nayak
+Full Stack Developer
+</div>
+
 
